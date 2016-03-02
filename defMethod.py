@@ -72,5 +72,9 @@ def calc(*numbers):
     return sum
 
 nums = [1,2,3]
-calc(nums[0],nums[1],nums[2])
+print (nums[0],nums[1],nums[2])
 print 'sum is',calc(*nums)
+
+#*args是可变参数，args接收的是一个tuple；
+
+#**kw是关键字参数，kw接收的是一个dict。
