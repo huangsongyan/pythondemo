@@ -2,14 +2,14 @@
 
 import json
 import functools
-from transwarp import web
+from transwarp.web import get,post,WSGIApplication
 
 
-@web.api
-@web.get('/api/users')
+@get('/api/users')
 def api_get_users():
 
     return "asd"
+
 
 
 
