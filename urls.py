@@ -3,19 +3,14 @@
 
 __author__ = 'Michael Liao'
 
-import hashlib
-import logging
-import re
-import time
 
-
-from transwarp.web import get, post, ctx, view, interceptor, seeother, notfound
-
-
+from transwarp.web import get,post
 
 
 @get('/')
 def index():
 
     return 'hello'
+
+
 
