@@ -3,7 +3,16 @@
 from flask import Flask
 from flask import request
 
+
+
 app = Flask(__name__)
+
+@app.route('/json',methods=['POST'])
+def my_json():
+    print request.headers
+    print request.json
+    return request.json
+
 
 @app.route('/', methods=['GET','POST'])
 def home():
